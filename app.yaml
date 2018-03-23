@@ -1,6 +1,6 @@
 runtime: python
 env: flex
-entrypoint: gunicorn -b $PORT hello_project.wsgi
+entrypoint: gunicorn -b :$PORT hello_project.wsgi
 
 runtime_config:
   python_version: 3
